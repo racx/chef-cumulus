@@ -13,8 +13,8 @@ template "#{cumulus_location}/CumulusLib/Makefile" do
   mode 0640
 end
 
-template "#{cumulus_location}/CumulusService/Makefile" do
-  source "CumulusService-Makefile"
+template "#{cumulus_location}/CumulusServer/Makefile" do
+  source "CumulusServer-Makefile"
   owner "root"
   group "staff"
   mode 0640
