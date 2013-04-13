@@ -1,4 +1,11 @@
-cumulus_location = "#{Chef::Config[:file_cache_path]}/cumulus"
+cumulus_location = "/usr/local/cumulus"
+
+directory cumulus_location do
+    owner "root"
+    group "root"
+    mode 0755
+    action :create
+end
 
 git cumulus_location do
   repository node[:cumulus][:git]
