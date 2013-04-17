@@ -33,7 +33,7 @@ script "build cumulus" do
   code <<-SH
   cd CumulusLib
   make
-  cd ../CumulusService
+  cd ../CumulusServer
   make
   echo "****************************************************"
   echo "****************************************************"
